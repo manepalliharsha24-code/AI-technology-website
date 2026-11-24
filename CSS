@@ -1,0 +1,468 @@
+
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080b18;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background: #10152a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.logo {
+    font-size: 27px;
+}
+
+.logo span,
+footer h2 span {
+    color: #00d9ff;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #00d9ff;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 90vh;
+    padding: 70px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: radial-gradient(circle at 80% 40%, #172b56, #080b18 60%);
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tagline {
+    color: #00d9ff;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.hero h1 span,
+.section-title span,
+.future h2 span {
+    color: #00d9ff;
+}
+
+.hero-content>p:not(.tagline) {
+    color: #b9c4dc;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #007bff;
+    color: white;
+    border: 2px solid #007bff;
+    border-radius: 7px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background: #00a6d6;
+    border-color: #00a6d6;
+    transform: translateY(-4px);
+}
+
+.btn.outline {
+    background: transparent;
+}
+
+.btn.outline:hover {
+    background: #007bff;
+}
+
+/* Hero Visual */
+.hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ai-circle {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #00d9ff;
+    background: linear-gradient(135deg, #142b59, #25134f);
+    box-shadow: 0 0 50px #00d9ff55;
+}
+
+.ai-circle span {
+    font-size: 85px;
+    font-weight: bold;
+    color: #00d9ff;
+}
+
+/* Common Sections */
+.section {
+    padding: 85px 10%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.section-description {
+    text-align: center;
+    color: #aab6ce;
+    margin-bottom: 40px;
+}
+
+/* About Section */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background: #121a31;
+    padding: 35px;
+    border-radius: 15px;
+}
+
+.about-image {
+    min-width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, #124e78, #31205f);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brain {
+    font-size: 90px;
+}
+
+.about-content h3 {
+    color: #00d9ff;
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+
+.about-content p {
+    color: #b9c4dc;
+    margin-bottom: 12px;
+}
+
+/* Technology Section */
+.technology {
+    background: #0d1326;
+}
+
+.technology-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.tech-card {
+    background: #151f3b;
+    padding: 30px;
+    border-radius: 13px;
+    border: 1px solid #253c64;
+    transition: 0.3s;
+}
+
+.tech-card:hover {
+    transform: translateY(-8px);
+    border-color: #00d9ff;
+    box-shadow: 0 10px 30px #00d9ff22;
+}
+
+.tech-icon {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.tech-card h3 {
+    color: #00d9ff;
+    margin-bottom: 12px;
+}
+
+.tech-card p {
+    color: #b9c4dc;
+    font-size: 14px;
+}
+
+/* Applications */
+.application-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.application-card {
+    background: #121a31;
+    padding: 30px;
+    border-radius: 13px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.application-card:hover {
+    transform: translateY(-8px);
+    background: #192748;
+}
+
+.app-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.application-card h3 {
+    color: #00d9ff;
+    margin-bottom: 10px;
+}
+
+.application-card p {
+    color: #b9c4dc;
+    font-size: 14px;
+}
+
+/* Benefits */
+.benefits {
+    background: #0d1326;
+}
+
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.benefit-card {
+    background: #151f3b;
+    padding: 25px;
+    border-radius: 12px;
+    border-bottom: 3px solid #00d9ff;
+    transition: 0.3s;
+}
+
+.benefit-card:hover {
+    transform: translateY(-7px);
+}
+
+.benefit-card h3 {
+    color: #00d9ff;
+    margin-bottom: 12px;
+}
+
+.benefit-card p {
+    color: #b9c4dc;
+    font-size: 14px;
+}
+
+/* Future Section */
+.future {
+    background: linear-gradient(120deg, #142a50, #201442);
+    text-align: center;
+}
+
+.future-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.future h2 {
+    font-size: 37px;
+    margin-bottom: 20px;
+}
+
+.future p:not(.tagline) {
+    color: #c2cce0;
+    margin-bottom: 18px;
+}
+
+.future .btn {
+    margin-top: 15px;
+}
+
+/* Contact */
+.contact-card {
+    max-width: 600px;
+    margin: auto;
+    background: #121a31;
+    padding: 35px;
+    border-radius: 15px;
+}
+
+.contact-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-card input,
+.contact-card textarea {
+    width: 100%;
+    padding: 14px;
+    background: #080b18;
+    border: 1px solid #354466;
+    border-radius: 7px;
+    color: white;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+.contact-card textarea {
+    resize: vertical;
+}
+
+.contact-card input:focus,
+.contact-card textarea:focus {
+    outline: 1px solid #00d9ff;
+}
+
+/* Footer */
+footer {
+    background: #10152a;
+    padding: 35px;
+    text-align: center;
+    color: #aab6ce;
+}
+
+footer h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #00d9ff;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .technology-grid,
+    .application-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .benefits-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .ai-circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .ai-circle span {
+        font-size: 60px;
+    }
+
+    .section {
+        padding: 60px 6%;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .technology-grid,
+    .application-grid,
+    .benefits-container {
+        grid-template-columns: 1fr;
+    }
+
+    .future h2 {
+        font-size: 28px;
+    }
+}
